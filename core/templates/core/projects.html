@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Personnelle Portfolio">
+    <meta name="keyword" content="portfolio, web design, Django">
+    <meta name="author" content="Ayoub Boughzala">
+    <title>Ayoub Boughzala Portfolio | Projects</title>
+    <!--link rel="stylesheet" type="text/css" href="../static/core/style.css"-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="../../static/core/images/circle-cropped.png" alt="" height="17%" width="17%">
+        </div>
+        <nav>
+          <ul>
+            <li ><a  href="{% url 'core:index' %}">Home</a></li>
+            <li><a href="{% url 'core:CV' %}">CV</a></li>
+            <li class="current"><a href="{% url 'core:projects' %}">Projects</a></li>
+            <li><a href="{% url 'core:contact' %}">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+    <h2>Deployed projects (click on image to visit)</h2>
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <a href="http://climat.pythonanywhere.com/"> <img src="../../static/core/images/weatherapp.png" alt="ss" width="150" height="150"></a>
+          <h3>Weather App</h3>
+          <p>Using beautifulsoup module to scrape data from google api and create a weather app using django, python, html, css and deploy it using git and pythonanywhere.</p>
+
+        </div>
+        <div class="box">
+          <a href="https://ayoubboughzala.pythonanywhere.com/"> <img src="../../static/core/images/todolist.png" alt="ss" width="150" height="150"></a>
+          <h3>Todolist</h3>
+          <p>Created using django, python, html, css and deployed using git and pythonanywhere </p>
+
+        </div>
+        <div class="box">
+          <a href="http://boughzalaayoub.pythonanywhere.com/"> <img src="../../static/core/images/firstsite.png" alt="ss" width="150" height="150"></a>
+          <h3>First site</h3>
+          <p>My first site created with django, deployed using git and pythonanywhere</p>
+
+        </div>
+
+      </div>
+
+    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <footer>
+      <p>Ayoub Boughzala Portfolio, Copyright &copy; 2020</p>
+    </footer>
+
+  </body>

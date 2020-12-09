@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Personnelle Portfolio">
+    <meta name="keyword" content="portfolio, web design, Django">
+    <meta name="author" content="Ayoub Boughzala">
+    <title>Ayoub Boughzala Portfolio | CV</title>
+    <!--link rel="stylesheet" type="text/css" href="../static/core/style.css"-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="../../static/core/images/circle-cropped.png" alt="" height="17%" width="17%">
+        </div>
+        <nav>
+          <ul>
+            <li ><a  href="{% url 'core:index' %}">Home</a></li>
+            <li class="current"><a href="{% url 'core:CV' %}">CV</a></li>
+            <li><a href="{% url 'core:projects' %}">Projects</a></li>
+            <li><a href="{% url 'core:contact' %}">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+    <section id="CV">
+      <div class="container">
+        <img src="../../static/core/images/cv noveau INFO.png" alt="">
+
+
+      </div>
+
+    </section>
+
+
+
+    <footer>
+      <p>Ayoub Boughzala Portfolio, Copyright &copy; 2020</p>
+    </footer>
+
+  </body>

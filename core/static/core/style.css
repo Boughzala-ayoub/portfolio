@@ -1,0 +1,162 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+/*global */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hiddens;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+/*header*/
+header{
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+header a{
+  color:#ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header #branding{
+  float: left;
+}
+header #branding img{
+  margin: 0;
+  margin-top: -10px;
+
+}
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight: bold;
+}
+header a:hover{
+  color:red;
+  font-weight: bold;
+}
+/*showcase*/
+#showcase{
+  margin-top: -47px ;
+  min-height: 600px;
+  background:url(https://images.unsplash.com/photo-1544847558-3ccacb31ee7f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) no-repeat 0 -300px;
+  background-size: cover;
+  text-align: center;
+  color: white;
+
+}
+ #showcase h2{
+  padding-top: 20%;
+  font-size: 55px;
+
+
+}
+#Summary{
+  padding: 10px;
+  text-align: center;
+}
+#Summary p{
+  font-size: 20px;
+
+
+}
+#Summary h1{
+  font-size: 50px;
+
+
+}
+footer{
+  padding:20px;
+  margin-top: 20px;
+  color: white;
+  background-color: #e8491d;
+  text-align: center;
+}
+#CV img{
+  margin-top: 20px;
+  width: 100%;
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+}
+#boxes{
+  margin-top: 20px;
+
+}
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+p{
+  text-align: center;
+}
+@media screen and (max-width: 1050px){
+  header #branding,
+  header nav,
+  #boxes .box{
+    float:none;
+    text-align: center;
+    width: 100%;
+
+
+  }
+  header{
+    padding-bottom: ;
+
+  }
+  #showcase h2{
+    margin-top: 100px;
+    padding-top: 20px;
+  }
+  #cv img{
+    margin-left: 0% ;image-resolution: snap;
+    padding: 0;
+    width: 100%
+  }
+  #Summary,
+  {
+    margin-top: -5000px;
+    padding-top: -20%;
+  }
+    #showcase{
+      margin-top: -100px;
+      margin-bottom: -300px;
+    }
+    header nav li{
+      float:none;
+      text-align: center;
+      width: 100%;
+      margin-left: -8px;
+
+
+    }
+    #boxes{
+      margin-bottom: -60%;
+    }
+}
